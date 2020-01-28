@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-top-navbar',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cartService: CartService) { }
 
   ngOnInit() {
   }
